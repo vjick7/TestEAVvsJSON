@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST EAV Products</title>
+</head>
+<body>
+<ul>
+    {% for c in category %}
+        <p><a href="{{ c.get_absolute_url }}"> {{ c.name }}</a></p>
+    {% endfor %}
+</ul>
+</body>
+</html>
